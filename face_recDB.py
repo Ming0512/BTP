@@ -23,9 +23,9 @@ detector = cv2.CascadeClassifier(cascade)
 
 distance_threshold = 0.5
 
-cred = credentials.Certificate("/home/research/face_rec_final/attendence-71b0f-firebase-adminsdk-rg7ej-0fe3a7b983.json") 
+cred = credentials.Certificate("Liink to your .json file to database") 
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://attendence-71b0f-default-rtdb.firebaseio.com/'  
+    'databaseURL': 'URL Link to database'  
 })
 
 attendance_ref = db.reference("Attendance") 
