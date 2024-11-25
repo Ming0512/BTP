@@ -1,11 +1,10 @@
 import cv2
 
-name = 'MINGMA_21EC39043'  # Replace with your nrg
+name = 'MINGMA_21EC39043' 
 
 # Initialize the camera
 cam = cv2.VideoCapture(0)
 
-# Load the pre-trained Haar Cascade Classifier for face detection
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 cv2.namedWindow("press space to take a photo", cv2.WINDOW_NORMAL)
